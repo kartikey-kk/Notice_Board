@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notice Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Notice Board</h2>
+
+    <h3>Add / Update Notice</h3>
+
+    <input type="hidden" id="noticeId">
+
+    <input type="text" id="title" placeholder="Title"><br>
+    <textarea id="description" placeholder="Description"></textarea><br>
+
+    <button
+            id="submitBtn"
+            onclick="addOrUpdateNotice()"
+            style="background-color: skyblue; color: black;"
+    >
+        Add Notice
+    </button>
+    <button onclick="goToAllNotices()">Show All Notices</button>
+    <div id="notices" style="display:none;"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
